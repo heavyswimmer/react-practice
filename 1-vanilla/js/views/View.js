@@ -1,19 +1,19 @@
-import { emit, on } from "../helpers.js";
+import { emit, on } from '../helpers.js';
 
-const tag = "[View]";
+const tag = '[View]';
 
 export default class View {
   constructor(element) {
-    if (!element) throw "no element";
+    if (!element) throw 'no element';
 
     this.element = element;
-    this.originalDisplay = this.element.style.dispaly || "";
+    this.originalDisplay = this.element.style.display || '';
 
     return this;
   }
 
   hide() {
-    this.element.style.display = "none";
+    this.element.style.display = 'none';
     return this;
   }
 
